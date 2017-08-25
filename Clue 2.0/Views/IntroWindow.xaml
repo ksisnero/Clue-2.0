@@ -6,18 +6,18 @@
              xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" xmlns:ViewModels="clr-namespace:Clue_2._0.ViewModels"
              mc:Ignorable="d"
              DataContext="{dxmvvm:ViewModelSource Type=ViewModels:IntroWindowViewModel}"
-             d:DesignHeight="824" d:DesignWidth="1070">
+             d:DesignHeight="700" d:DesignWidth="400">
     <Grid>
 
         <Grid x:Name="Instructions" Grid.RowSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="350*"/>
-                <RowDefinition Height="335*"/>
-                <RowDefinition Height="139*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="16*"/>
+                <RowDefinition Height="3*"/>
             </Grid.RowDefinitions>
-            <TextBlock x:Name="InstructionTextBlock" TextWrapping="Wrap" FontSize="20" RenderTransformOrigin="0.176,1.66" Margin="311,0" FontFamily="Tw Cen MT" Grid.Row="1" HorizontalAlignment="Center" Width="448" Foreground="Black"><Run Text="Instructions: "/><LineBreak/><Run/><LineBreak/><Run Text="You're trying to discover the murderer of Mr. Boddy. "/><LineBreak/><Run/><LineBreak/><Run Text="To win, you must guess correctly the room, weapon, and suspect. When you guess an option correctly, an '*' will replace your guesses. If you guess that option incorrectly, your incorrect guess will come after the '*'. Let's hope you have a good memory."/><LineBreak/><Run/><LineBreak/><Run Text="You only have 6 guesses, good luck."/></TextBlock>
-            <Image x:Name="ClueLogo" Margin="312,78,312,52" Source="/Clue 2.0;component/ClueT.jpg" Stretch="Fill" HorizontalAlignment="Center" Width="446" Height="220" VerticalAlignment="Center"/>
-            <Button x:Name="StartGame" Content="StartGame" HorizontalAlignment="Center" Margin="489,0" Grid.Row="2" VerticalAlignment="Top" Width="92" Height="22"/>
+            <Image x:Name="ClueLogo" Margin="2,22,2,9" Source="/Clue 2.0;component/ClueT.jpg" Stretch="Fill" HorizontalAlignment="Center" Width="396" Height="194" VerticalAlignment="Center"/>
+            <Button x:Name="StartGame" Content="Start Game" HorizontalAlignment="Center" Margin="154,0" Grid.Row="2" VerticalAlignment="Top" Width="92" Height="22"/>
+            <TextBlock x:Name="InstructionTextBlock" TextWrapping="Wrap" FontSize="20" RenderTransformOrigin="0.176,1.66" Margin="0" FontFamily="Tw Cen MT" Grid.Row="1" Foreground="Black" HorizontalAlignment="Center" Width="360" VerticalAlignment="Center"><Run Text="Instructions: "/><LineBreak/><Run/><LineBreak/><Run Text="You're trying to discover the murderer of Mr. Boddy. "/><LineBreak/><Run/><LineBreak/><Run Text="To win, you must guess correctly the room, weapon, and suspect. When you guess an option correctly, an '*' will replace your guesses. If you guess that option incorrectly, your incorrect guess will come after the '*'. Let's hope you have a good memory."/><LineBreak/><Run/><LineBreak/><Run Text="You only have 6 guesses, good luck."/></TextBlock>
         </Grid>
 
     </Grid>
